@@ -105,7 +105,7 @@ class SubtitlesProvider:
                     logging(f"Get movie response: {response}")
                     logging(f"Ep index: {response['success']}")
                     if response['success']:
-                        return self.filter_subs_by_language_and_epindex(response['subs'], 'Vietnamese', ep_index)
+                        return self.filter_subs_by_language_and_epindex(response['subs'], 'English', ep_index)
                     else: 
                         return None
             return None 
