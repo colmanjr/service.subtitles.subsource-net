@@ -121,6 +121,6 @@ class SubtitleDownloader:
                                              label2=file_name)
                 url = "plugin://" + __scriptid__ + "/?action=download&id=" + str(subtitle['subId'])
                 list_item.setArt({
-                    "thumb": "vi"})
+                    "thumb": "en"})
                 xbmcplugin.addDirectoryItem(handle=self.handle, url=url, listitem=list_item, isFolder=False)
         xbmcplugin.endOfDirectory(self.handle)
